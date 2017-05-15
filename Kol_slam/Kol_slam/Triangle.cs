@@ -27,5 +27,12 @@ namespace Kol_slam {
             };
         }
 
+        public void Translate(Point t) {
+            foreach (Point pos in vertices) {
+                pos.x += t.x;
+                pos.y += t.y;
+            }
+        }
+
     }
 }
