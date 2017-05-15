@@ -22,7 +22,7 @@ namespace Kol_slam {
 
             vertices = new List<Point> {
                 org,
-                new Point(org.x + a, 0),
+                new Point(org.x + a, org.y),
                 new Point(org.x + 0.5*a, org.y + b)
             };
         }

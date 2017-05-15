@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Kol_slam {
-    public class Point {
+    public class Point : IEquatable<Point> {
 
         public double x, y;
 
@@ -14,5 +14,8 @@ namespace Kol_slam {
             y = _y;
         }
 
+        public bool Equals(Point other) {
+            return x == other.x && y == other.y;
+        }
     }
 }
