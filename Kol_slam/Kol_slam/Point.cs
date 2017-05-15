@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace Kol_slam {
     public class Point {
 
-        public int x, y;
+        public double x, y;
 
-        public Point(int _x, int _y) {
+        public Point(double _x, double _y) {
             x = _x;
             y = _y;
         }
