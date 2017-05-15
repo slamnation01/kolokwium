@@ -44,6 +44,26 @@ namespace Kol_slamTests {
                 }
             }
         }
+
+        [TestMethod]
+        [TestCategory("Logic")]
+        public void TranslateTriangleTest() {
+            List<Point> expectedVerticles = new List<Point>
+            {
+                new Point(1, 1),
+                new Point(5, 1),
+                new Point(3, 4)
+            };
+
+            Triangle tri = new Triangle(4, 3);
+            tri.Translate(new Point(1, 1));
+
+            foreach (Point pos in tri.vertices) {
+                if (!expectedVerticles.Contains(pos)) {
+                    Assert.Fail();
+                }
+            }
+        }
     }
 }
 
