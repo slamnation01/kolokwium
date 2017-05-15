@@ -55,6 +55,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RectangleTests.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kol_slam\Kol_slam.csproj">
+      <Project>{5F835496-1B02-493D-A05F-59831250689F}</Project>
+      <Name>Kol_slam</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
