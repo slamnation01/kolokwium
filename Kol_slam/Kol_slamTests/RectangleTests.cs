@@ -22,7 +22,7 @@ namespace Kol_slamTests {
             Rectangle rec = new Rectangle(2, 4);
 
             foreach (Point pos in rec.vertices) {
-                if (!expectedPoints.Contains(pos)) {
+                if (!expectedVerticles.Contains(pos)) {
                     Assert.Fail();
                 }
             }
@@ -42,7 +42,7 @@ namespace Kol_slamTests {
             Rectangle rec = new Rectangle(new Point(1, 1), 2, 4);
 
             foreach (Point pos in rec.vertices) {
-                if (!expectedPoints.Contains(pos)) {
+                if (!expectedVerticles.Contains(pos)) {
                     Assert.Fail();
                 }
             }
